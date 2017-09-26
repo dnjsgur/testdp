@@ -1,0 +1,30 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+    <title>자바스크립트 실습</title>
+    <style>
+      input{font-size: 1em;}
+      button{font-size: 1em;}
+      body{font-size:2em;}
+    </style>
+</head>
+<body>
+ <h1 id="display">당신의 표준체중을 알아보세요.</h1>
+ <input type = "text" id = "Weight" placeholder=" 당신의 체중을 알려주세요">"kg"
+ <input type = "text" id = "Weight" placeholder=" 당신의 키를 알려주세요">"cm"
+ <br>
+ <button id="action">계산하기</button>
+ <!-- html주석은 화살표--> 
+ <script>
+  // 변수와 함수 
+  // veriable and function
+        standadWeight(56,164);
+        standadWeight(70, 184);
+  function standadWeight(Weight, Height) {
+    var StandardWeight = (Height - 100) *0.9; 
+     var dietWeight = Weight - StandardWeight ;
+      var Text = "친구의 현재 몸무게는" + Weight + "kg이고, 표준체중은" +StandardWeight + "kg입니다. 따라서 친구는 " +dietWeight + "kg를 감량해야합니다.";
+ console.log(Text);
+}
+ </script>
+</body>
